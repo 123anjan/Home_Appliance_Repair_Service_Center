@@ -1,4 +1,4 @@
-import { brand } from "../data";
+import { asset, brand } from "../data";
 
 export default function EmergencyCta() {
   return (
@@ -6,7 +6,7 @@ export default function EmergencyCta() {
       {/* Left: photo with dark overlay. Put your own photo at public/images/emergency.jpg */}
       <div className="relative min-h-72 md:min-h-96">
         <img
-          src="/images/Emergency.webp"
+          src={asset("/images/Emergency.webp")}
           alt="Technician taking an emergency repair call"
           className="absolute inset-0 h-full w-full bg-slate-700 object-cover"
         />

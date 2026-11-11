@@ -1,4 +1,4 @@
-import { brand, whyPoints } from "../data";
+import { asset, brand, whyPoints } from "../data";
 import Rich from "./Rich";
 
 const fill = (text) =>
@@ -43,7 +43,9 @@ export default function WhyUs() {
         <div>
           {/* Your own photo at public/images/why-us.jpg */}
           <img
-            src="/images/Why-Choose-Roy-Home-Appliances-Service-Care-In-Kolkata.webp"
+            src={asset(
+              "/images/Why-Choose-Roy-Home-Appliances-Service-Care-In-Kolkata.webp",
+            )}
             alt="Technician repairing a refrigerator"
             className="aspect-[3/4] w-full bg-slate-200 object-cover"
           />

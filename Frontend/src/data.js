@@ -1,3 +1,6 @@
+export const asset = (path) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+
 export const brand = {
   name: "YourBrand Appliance Care",
   city: "Your City",
@@ -27,7 +30,7 @@ export const serviceBlocks = [
     icon: "❄️",
     short: "AC",
     title: "Emergency AC Repair Service",
-    images: ["/images/AC repair.webp", "/images/AC repair-2.webp"], // e.g. ['/images/ac-1.jpg', '/images/ac-2.jpg']
+    images: [asset("/images/AC repair.webp"), asset("/images/AC repair-2.webp")],
     text: "Is your **AC not cooling, leaking water, making unusual noise, or showing error codes**? At **{brand}**, we offer **quick and affordable AC repair** for all major brands. Whether it's a **split AC, window AC, inverter AC, or non-inverter model**, our trained technicians repair every type with precision and care.",
   },
   {
@@ -35,8 +38,8 @@ export const serviceBlocks = [
     short: "Fridge",
     title: "Refrigerator Repair Service",
     images: [
-      "/images/Refrigerator repair.webp",
-      "/images/Refrigerator repair 2.webp",
+      asset("/images/Refrigerator repair.webp"),
+      asset("/images/Refrigerator repair 2.webp"),
     ],
     text: "Fridge **not cooling, freezing too much, leaking, or making noise**? We repair **single-door, double-door and side-by-side refrigerators** at your doorstep with **genuine spare parts** and a clear estimate before work begins.",
   },
@@ -45,8 +48,8 @@ export const serviceBlocks = [
     short: "Washing Machine",
     title: "Washing Machine Repair Service",
     images: [
-      "/images/Washing machine repair.webp",
-      "/images/Washing machine repair 2.webp",
+      asset("/images/Washing machine repair.webp"),
+      asset("/images/Washing machine repair 2.webp"),
     ],
     text: "Drum not spinning, water not draining, door lock errors or heavy vibration? Our technicians fix **front-load and top-load washing machines** quickly, with **long-lasting results**.",
   },
@@ -55,8 +58,8 @@ export const serviceBlocks = [
     short: "Geyser",
     title: "Geyser Repair Service",
     images: [
-      "/images/geyser-repairing-service-500x500.webp",
-      "/images/Geyser repair 2.webp",
+      asset("/images/geyser-repairing-service-500x500.webp"),
+      asset("/images/Geyser repair 2.webp"),
     ],
     text: "Facing **no hot water, slow heating, water leakage, or indicator faults**? We handle **instant geysers, storage water heaters, and electric and gas models** safely and accurately.",
   },

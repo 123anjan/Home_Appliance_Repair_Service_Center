@@ -1,4 +1,4 @@
-import { brand } from "../data";
+import { asset, brand } from "../data";
 import Photo from "./Photo";
 
 export default function About() {
@@ -28,7 +28,9 @@ export default function About() {
 
         {/* Replace with your own photo: public/images/about.jpg */}
         <Photo
-          src="/images/Roy-Home-Appliances-Repair-Care-Refrigerator-repair-service-e1755869749795.webp"
+          src={asset(
+            "/images/Roy-Home-Appliances-Repair-Care-Refrigerator-repair-service-e1755869749795.webp",
+          )}
           icon="🧰"
           label="Technician repairing an appliance"
         />

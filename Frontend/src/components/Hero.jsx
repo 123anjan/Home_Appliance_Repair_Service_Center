@@ -1,4 +1,4 @@
-import { brand, heroPoints } from "../data";
+import { asset, brand, heroPoints } from "../data";
 import LeadForm from "./LeadForm";
 
 export default function Hero() {
@@ -11,7 +11,7 @@ export default function Hero() {
           Put your photo at public/images/hero.jpg */}
       <div
         className="fixed inset-0 bg-cover bg-center will-change-transform animate-slow-zoom motion-reduce:animate-none"
-        style={{ backgroundImage: "url('/images/Hero.webp')" }}
+        style={{ backgroundImage: `url('${asset("/images/Hero.webp")}')` }}
       />
       {/* Dark overlay: bg-navy/60 shows more of the image, bg-navy/85 shows less */}
       <div className="absolute inset-0 bg-navy/75" />
